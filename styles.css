@@ -1,8 +1,24 @@
+* {
+    margin: 10px;
+}
+
 img{
     width: 30%;
 }
 
-.titles{
+.rowdisplay{
     display: flex;
-    flex-direction: row;
+    flex: row;
+}
+
+ul{
+    list-style: none;
+}
+
+.ind-text{
+    text-indent: 25px;
+}
+
+.links{
+    margin-right: 10rem;
 }
