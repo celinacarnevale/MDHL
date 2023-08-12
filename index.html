@@ -3,47 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./styles/style1.css">
+        <!-- <link rel="stylesheet" href="./styles/style2.css">
+        <link rel="stylesheet" href="./styles/style3.css"> -->
         <title>Mighty Ducks Hockey League</title>
     </head>
     <body>
-        <!-- Div que contiene el titulo y logo-->
-        <div class="rowdisplay">
-            <img class="logopic" src="./assets/LogoMightyducks-01.png" alt="Imagen con el Logo de Mighty Ducks, es un casco de hockey blanco con dos palos amarillos cruzados por detras, y el nombre del equipo en letras amarillas.">
-            <h1>Mighty Ducks Hockey League</h1>
+        <div class="titlesdiv">
+            <!-- Div que contiene el titulo y foto-->
+            <div class="pictitle">
+                <h1>Mighty Ducks Hockey League</h1>
+                <img src="./assets/design1_image1.jpg" alt="Una foto de un partido de los Mighty Ducks donde un jugador se encuentra enfrentandose a otro, y el referee esta observando el encuentro.">
+            </div>
+
+            <!--Div con el logo y el titulo-->
+            <div class="logo-title">
+                <h2>Upcoming Events</h2>
+                <img class="logopic" src="./assets/LogoMightyducks-01.png" alt="Imagen con el Logo de Mighty Ducks, es un casco de hockey blanco con dos palos amarillos cruzados por detras, y el nombre del equipo en letras amarillas.">
+            </div>
         </div>
 
+        <!--Links y contenido de texto-->
+        <div class="linksandcontent">
         <!--Div con los links-->
         <div class="links">
-            <a href="#">Home |</a>
-            <a href="./about.html">About MDHL |</a>
+            <a href="#" class="currentlink">Home</a>
+            <a href="./about.html">About MDHL</a>
             <a href="./contact.html">Contact</a>
         </div>
-
-        <!--Contenido-->
-        <div>
-            <!--Titulo-->
-            <h2>Upcoming Events</h2>
-
-            <!--Contenido de imagen + lista-->
-            <div class="rowdisplay">
-                <img src="./assets/hockey1.jpg" alt="Una foto de uno de los jugadores mirando hacia la izquierda, metido en el juego con uniforme blanco y rojo.">
-                
-                <ul>
-                    <li>
-                        <h3 class="listtitles">August 4</h3>
-                        <p class="ind-text">MDSL Fundraiser</p>
-                    </li>
-                    <li>
-                        <h3 class="listtitles">August 16</h3>
-                        <p class="ind-text">Season Kick-off: Meet the Teams</p>
-                    </li>
-                    <li>
-                        <h3 class="listtitles">September 1</h3>
-                        <p class="ind-text">First Game of the Season (Check Game Schedule for details)</p>
-                    </li>
-                </ul>
-            </div>
+            <ul>
+                <li>
+                    <h3 class="listtitles">August 4</h3>
+                    <p class="ind-text">MDSL Fundraiser</p>
+                </li>
+                <li>
+                    <h3 class="listtitles">August 16</h3>
+                    <p class="ind-text">Season Kick-off: Meet the Teams</p>
+                </li>
+                <li>
+                    <h3 class="listtitles">September 1</h3>
+                    <p class="ind-text">First Game of the Season (Check Game Schedule for details)</p>
+                </li>
+            </ul>
         </div>
     </body>
 </html>
