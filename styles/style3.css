@@ -6,17 +6,20 @@
     line-height: 4vh;
 }
 
+/*Estilo para la navbar*/
 .navbar{
     position: fixed;
     background-color: #63A69A;
     width: 100vw;
 }
 
+/*Estilos para el logo*/
 .logopic{
     width: 5.5vw;
     padding-right: 2vw;
 }
 
+/*Estilos para el logo, el titulo y los links*/
 .titleslogodiv{
     display: flex;
     flex-direction: row;
@@ -24,10 +27,12 @@
     height: 8vh;
 }
 
+/*Imagen tipo banner*/
 img{
     width: 98.9vw;
 }
 
+/*Titulo del navbar*/
 h1{
     padding-top: 2vh;
     padding-left: 2vw;
@@ -35,18 +40,20 @@ h1{
     text-shadow: 0 0 1vh #000000;
 }
 
+/*Links de la navbar que redirigen a distintas secciones de la pagina*/
 .links{
     padding-top: 2.5vh;
     width: 50vw;
 }
 
+/*Elementos anchor*/
 a{
     color: #ffffff;
     text-decoration: none;
     padding-left: 2vw;
 }
 
-
+/*Estilos para los anchor cuando nos situamos en su pagina o cuando pasamos el mouse por encima de ellos*/
 .currentlink, a:hover{
     background-color: #ffffff;
     color: #63A69A;
@@ -55,6 +62,7 @@ a{
     text-align: center;
 }
 
+/*Links de contacto (mails)*/
 .contactlink{
     text-decoration: underline;
     color: rgb(51, 129, 178);
@@ -72,12 +80,14 @@ li{
     text-indent: 3vw;
 }
 
+/*Estilos para los h2 (titulos de cada seccion), listas y contenido*/
 .subtitle, .list, .contact-text, .content{
     margin: 5vh 10vw;
     list-style: none;
     list-style-position: inside;
 }
 
+/*Color de fondo para la seccion de contenido*/
 .subtitleandcontent{
     background-color: #ecb26a;
 }
@@ -110,10 +120,12 @@ td{
     text-align: center;
 }
 
+/*Estilos para las tablas*/
 table{
     margin: 2vh 0vw;
 }
 
+/*Cards para el contenido*/
 .cards{
     background-color: #ffffff;
     width: 70vw;
