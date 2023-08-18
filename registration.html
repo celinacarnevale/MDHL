@@ -32,106 +32,115 @@
             <img src="./assets/design1_image2.jpg" alt="Una foto de un partido de los Mighty Ducks donde un jugador se encuentra enfrentandose a la porteria, y 3 jugadores del equipo contrario tratan de detenerlo.">
             <div class="cards">
                 <h2 class="subtitle">Rules of play & policies</h2>
+
                 <form action="show_data.html" method="get">
 
-                    <!--Fieldset para el nombre-->
-                    <fieldset class="formitem">
-                        <label for="firstname">Player's first name
-                            <input type="text" name="firstname" placeholder="Enter the player's first name">
-                        </label>
-                    </fieldset>
+                    <div class="rowitems">
+                        <!--Fieldset para el nombre-->
+                        <fieldset class="formitem">
+                            <label for="firstname">Player's first name:
+                                <input class="textinput" type="text" name="firstname" placeholder="Enter the player's first name">
+                            </label>
+                        </fieldset>
 
-                    <!--Fieldset para el apellido-->
-                    <fieldset class="formitem">
-                        <label for="lastname">Last name
-                            <input type="text" name="lastname" placeholder="Enter the player's last name">
-                        </label>
-                    </fieldset>
+                        <!--Fieldset para el apellido-->
+                        <fieldset class="formitem">
+                            <label for="lastname">Last name:
+                                <input class="textinput" type="text" name="lastname" placeholder="Enter the player's last name">
+                            </label>
+                        </fieldset>
+                    </div>
 
                     <!--Fieldset para la direccion-->
                     <fieldset class="formitem">
-                        <label for="address">Street address
-                            <input type="text" name="address" placeholder="Enter the street address">
+                        <label for="address">Street address:
+                            <input class="textinput" type="text" name="address" placeholder="Enter the street address">
                         </label>
                     </fieldset>
 
-                    <!--Fieldset para la ciudad-->
-                    <fieldset class="formitem">
-                        <label for="city">City
-                            <input type="text" name="city" placeholder="Enter the city">
-                        </label>
-                    </fieldset>
+                    <div class="rowitems">
+                        <!--Fieldset para la ciudad-->
+                        <fieldset class="formitem">
+                            <label for="city">City:
+                                <input class="textinput" type="text" name="city" placeholder="Enter the city">
+                            </label>
+                        </fieldset>
 
-                    <!--Fieldset para el codigo postal-->
-                    <fieldset class="formitem">
-                        <label for="zipcode">Zip code
-                            <input type="number" name="zipcode" placeholder="Enter the Zip Code">
-                        </label>
-                    </fieldset>
+                        <!--Fieldset para el codigo postal-->
+                        <fieldset class="formitem">
+                            <label for="zipcode">Zip code:
+                                <input class="textinput" type="number" name="zipcode" placeholder="Enter the Zip Code">
+                            </label>
+                        </fieldset>
+                    </div>
 
-                    <!--Fieldset para la fecha de nacimiento-->
-                    <fieldset class="formitem">
-                        <label for="birthdate">Birth Date (mm/dd/yyyy)
-                            <input type="date" name="birthdate">
-                        </label>
-                    </fieldset>
+                    <div class="rowitems">
+                        <!--Fieldset para la fecha de nacimiento-->
+                        <fieldset class="formitem">
+                            <label for="birthdate">Birth Date (mm/dd/yyyy)
+                                <input type="date" name="birthdate">
+                            </label>
+                        </fieldset>
 
-                    <!--Fieldset para el genero-->
-                    <fieldset class="formitem">
-                        <legend>Gender</legend>
+                        <!--Fieldset para el genero-->
+                        <fieldset class="formitem">
+                            <legend>Gender</legend>
 
-                        <label for="female">
-                            <input type="radio" name="gender" id="female" value="female"> Female
-                        </label>
-                        
-                        <label for="male">
-                            <input type="radio" name="gender" id="male" value="male"> Male
-                        </label>
-                    </fieldset>
+                            <label for="female">
+                                <input type="radio" name="gender" id="female" value="female"> Female
+                            </label>
+                            
+                            <label for="male">
+                                <input type="radio" name="gender" id="male" value="male"> Male
+                            </label>
+                        </fieldset>
+                    </div>
 
-                    <!--Fieldset para el grado-->
-                    <fieldset class="formitem">
-                        <legend>Grade</legend>
+                    <div class="rowitems">
+                        <!--Fieldset para el grado-->
+                        <fieldset class="formitem">
+                            <legend>Grade</legend>
 
-                        <label for="preschool">
-                            <input type="radio" name="grade" id="preschool" value="preschool"> Pre-school
-                        </label>
+                            <label for="preschool">
+                                <input type="radio" name="grade" id="preschool" value="preschool"> Pre-school
+                            </label>
 
-                        <label for="first">
-                            <input type="radio" name="grade" id="first" value="first"> 1st
-                        </label>
+                            <label for="first">
+                                <input type="radio" name="grade" id="first" value="first"> 1st
+                            </label>
 
-                        <label for="second">
-                            <input type="radio" name="grade" id="second" value="second"> 2nd
-                        </label>
+                            <label for="second">
+                                <input type="radio" name="grade" id="second" value="second"> 2nd
+                            </label>
 
-                        <label for="third"> 
-                            <input type="radio" name="grade" id="third" value="third"> 3rd
-                        </label>
+                            <label for="third"> 
+                                <input type="radio" name="grade" id="third" value="third"> 3rd
+                            </label>
 
-                        <label for="fourth">
-                            <input type="radio" name="grade" id="fourth" value="forth"> 4th
-                        </label>
+                            <label for="fourth">
+                                <input type="radio" name="grade" id="fourth" value="forth"> 4th
+                            </label>
 
-                        <label for="fifth">
-                            <input type="radio" name="grade" id="fifth" value="fifth"> 5th
-                        </label>
-                    </fieldset>
+                            <label for="fifth">
+                                <input type="radio" name="grade" id="fifth" value="fifth"> 5th
+                            </label>
+                        </fieldset>
 
-                    <!--Fieldset para la escuela-->
-                    <fieldset class="formitem">
-                        <legend>Which elementary school do you live near?</legend>
-                        <label for="school">Closest school
-                            <select name="school" id="school">
-                                <option value="aj-katzenmaier">AJ Katzenmaier</option>
-                                <option value="greenbay">Greenbay</option>
-                                <option value="howard-a-yeager">Howard A Yeager</option>
-                                <option value="marjorie-p-hart">Marjorie P Hart</option>
-                                <option value="north-elementary">North Elementary</option>
-                                <option value="south-elementary">South Elementary</option>
-                            </select>
-                        </label>
-                    </fieldset>
+                        <!--Fieldset para la escuela-->
+                        <fieldset class="formitem">
+                            <legend>Which elementary school do you live near?</legend>
+                            <label for="school">Closest school
+                                <select name="school" id="school">
+                                    <option value="aj-katzenmaier">AJ Katzenmaier</option>
+                                    <option value="greenbay">Greenbay</option>
+                                    <option value="howard-a-yeager">Howard A Yeager</option>
+                                    <option value="marjorie-p-hart">Marjorie P Hart</option>
+                                    <option value="north-elementary">North Elementary</option>
+                                    <option value="south-elementary">South Elementary</option>
+                                </select>
+                            </label>
+                        </fieldset>
+                    </div>
 
                     <!--Fieldset para la posicion del jugador-->
                     <fieldset class="formitem">
@@ -202,13 +211,15 @@
                         name below, I also acknowledge that I have read the cancellation policy and agree to its terms.
                     </legend>
 
+                    <div class="signature">
                         <label for="parentsignature">Parent/Guardian signature:
-                            <input type="text" name="parentsignature" placeholder="Please enter the parent/guardian first and last name">
+                            <input class="textinput" type="text" name="parentsignature" placeholder="Please enter the parent/guardian first and last name">
                         </label>
 
                         <label for="date">Date:
                             <input type="date" name="date" placeholder="Enter today's date">
                         </label>
+                    </div>
                     </fieldset>
 
                     <input type="submit" class="submitbutton" value="Submit">

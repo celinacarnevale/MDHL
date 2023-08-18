@@ -149,3 +149,43 @@ table{
     flex-direction: column;
     padding: 2vh 2vw;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.signature{
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    border: none;
+    padding: 1vh 0vw;
+}
+
+.textinput{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.submitbutton{
+    width: 10vw;
+    background-color: #63A69A;
+    color: #ffffff;
+    border: none;
+    align-items: center;
+    margin-left: 26vw;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    border-radius: 1vh;
+}
+
+.rowitems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
