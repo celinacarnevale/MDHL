@@ -9,7 +9,7 @@ img{
 
 .rowdisplay{
     display: flex;
-    flex: row;
+    flex-direction: row;
 }
 
 ul{

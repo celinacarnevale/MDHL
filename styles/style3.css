@@ -15,15 +15,14 @@
 
 /*Estilos para el logo*/
 .logopic{
-    width: 5.5vw;
-    padding-right: 2vw;
+    width: 6vw;
 }
 
 /*Estilos para el logo, el titulo y los links*/
 .titleslogodiv{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 8vh;
 }
 
@@ -34,23 +33,25 @@ img{
 
 /*Titulo del navbar*/
 h1{
-    padding-top: 2vh;
-    padding-left: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     color: #ffffff;
     text-shadow: 0 0 1vh #000000;
 }
 
 /*Links de la navbar que redirigen a distintas secciones de la pagina*/
 .links{
-    padding-top: 2.5vh;
-    width: 50vw;
+    width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /*Elementos anchor*/
 a{
     color: #ffffff;
     text-decoration: none;
-    padding-left: 2vw;
 }
 
 /*Estilos para los anchor cuando nos situamos en su pagina o cuando pasamos el mouse por encima de ellos*/
@@ -88,7 +89,7 @@ li{
 }
 
 /*Color de fondo para la seccion de contenido*/
-.subtitleandcontent{
+html{
     background-color: #ecb26a;
 }
 
@@ -177,15 +178,61 @@ fieldset{
     background-color: #63A69A;
     color: #ffffff;
     border: none;
-    align-items: center;
-    margin-left: 26vw;
-    margin-bottom: 2vh;
-    margin-top: 1vh;
     border-radius: 1vh;
+}
+
+.formbutton{
+    display: grid;
+    justify-content: center;
 }
 
 .rowitems{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.radioycheckbox{
+    padding: 0vh 1vw;
+}
+
+.hambmenu{
+    display: none;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #FFFFFF;
+    background-color: #63A69A;
+    height: 4vh;
+    color: inherit;
+    text-decoration: none;
+}
+
+.menusvg{
+    color: #FFFFFF;
+    align-content: center;
+}
+
+.hambmenu nav {
+    display: none;
+}
+
+.hambmenu input[type="checkbox"] {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 1120px){
+    .links{
+        display: none;
+    }
+
+    .hambmenu{
+        display: flex;
+        width: 3vw;
+        justify-content: center;
+    }
+
+    .hambmenu input:checked ~ nav {
+        display: flex;
+        flex-direction: column;
+    }
 }
